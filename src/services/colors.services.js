@@ -11,7 +11,7 @@ const conex = require('../database/db.js');
 
 exports.getColors = async function () {
 	try {
-		const [rows, fields] = await fconex.query('SELECT * FROM colors');
+		const [rows, fields] = await fconex.query('SELECT id,name,color FROM colors');
 		return rows;
 	} catch (error) {
 		console.log(error);
@@ -20,7 +20,7 @@ exports.getColors = async function () {
 
 exports.getColorsPerPage = async function (page, limit = 5) {
 	try {
-		const [rows, fields] = await fconex.query('SELECT * FROM colors LIMIT ?, ?', [(page - 1) * limit, limit]);
+		const [rows, fields] = await fconex.query('SELECT id,name,color FROM colors LIMIT ?, ?', [(page - 1) * limit, limit]);
 		return rows;
 	} catch (error) {
 		console.log(error);
