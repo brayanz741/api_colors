@@ -1,0 +1,30 @@
+{
+  "name": "api_colours",
+  "version": "1.0.0",
+  "description": "Repositorio dedicado al consumo de los colores registrados, con la capacidad de crear nuevos colores.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brayanz741/api_colours.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brayanz741/api_colours/issues"
+  },
+  "homepage": "https://github.com/brayanz741/api_colours#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-http-context": "^1.2.4",
+    "moment": "^2.29.1",
+    "mysql2": "^2.3.3",
+    "nodemon": "^2.0.15",
+    "winston": "^3.3.3"
+  }
+}
